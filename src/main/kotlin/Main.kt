@@ -47,8 +47,19 @@ fun main(args: Array<String>) {
                 }
             }
             2-> {
-                println("Digite número de notas")
-                val nNotas = readln().toInt()
+                /*println("Digite número de notas")
+                val nNotas = readln().toInt()*/
+
+                val notas = arrayOf(3.5 , 2.0 , 40 , 38 )
+
+                println("""
+                    1. Promedio Notas
+                    2. Nota mas alta
+                    3. Nota mas baja
+                    Digite opcion: 
+                """.trimIndent())
+
+                var opcNota = readln().toInt()
             }
             else-> println("Adios")
         }
